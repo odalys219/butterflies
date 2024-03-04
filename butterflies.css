@@ -1,0 +1,125 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 12px;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4BB44;
+  }
+  body > h1 {
+    margin: 1.5rem 0;
+    font-family: Comic Sans MS, sans-serif;
+    font-size: 50px;
+    color: #F50255;
+  }
+  .video-player {
+    width: 95%;
+    max-width: 750px;
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+  }
+  .video {
+    width: 100%;
+  }
+  .controls__button {
+    background: #D8BFD8;
+    position: center;
+    border: 1;
+    line-height: 2;
+    color: #DE3163;
+    text-align: center;
+    outline: 2;
+    padding: 2;
+    cursor: pointer;
+    max-width: 75px;
+    border-radius: 12px;
+  }
+  .controls__button:hover
+  {color: #F89880;}
+  
+
+  .controls__slider {
+    width: 10px;
+    height: 30px;
+  }
+  .controls {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background: rgba(0,0,0,0.1);
+    transform: translateY(0);
+  }
+  .controls > * {
+    flex: 1;
+  }
+  .progress {
+    flex: 10;
+    position: relative;
+    display: flex;
+    flex-basis: 100%;
+    height: 5px;
+    /* background: rgba(0,0,0,0.5); */
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+    height: 15px;
+    border-radius: 12px;
+  }
+  .progress__filled {
+    width: 50%;
+    background: #E97451;
+    flex: 0;
+    flex-basis: 0%;
+    border-radius: 12px;
+  }
+  
+  input[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+    width: 100%;
+    margin: 0 5px;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.8);
+    border-radius: 4px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    height: 0.9rem;
+    width: 0.9rem;
+    border-radius: 50px;
+    background: #00ff40;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.5px;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.8);
+    border-radius: 4px;
+  }
+  input[type=range]::-moz-range-thumb {
+    height: 0.9rem;
+    width: 0.9rem;
+    border-radius: 50px;
+    background: #00ff40;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.5px;
+  }
+  

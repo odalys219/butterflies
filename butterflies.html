@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Butterfly Video PLayer</title>
+    <link rel="stylesheet" href="butterflies.css" />
+  </head>
+  <body>
+    <h1>Butterfly Video Player</h1>
+    <div class="video-player">
+      <video class="video">
+        <source
+          src="butterflies.mp4"
+          type="video/mp4"
+        />
+        <source
+          src="butterflies.webm4"
+          type="video/webm"
+        />
+        <p>Your browser doesn't support HTML5 video.</p>
+      </video>
+      <div class="controls">
+        <div class="progress">
+          <div class="progress__filled"></div>
+        </div>
+        <button class="controls__button toggleButton" title="Toggle Play">
+          ►
+        </button>
+        
+        <button class="controls__button" data-skip="-10">< 10s</button>
+        <button class="controls__button" data-skip="25">10s ></button>
+      </div>
+    </div>
+    <script src="butterflies.js"></script>
+  </body>
+</html>
